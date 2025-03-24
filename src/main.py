@@ -2,10 +2,10 @@ import argparse
 from argparse import RawTextHelpFormatter
 import numpy as np   
 import matplotlib.pyplot as plt  
-import integrators # Stepper functions and integrator driver
-import signals # Signal functions
+import integration.integrators as integrators # Stepper functions and integrator driver
+import audio_signals.signals as signals # Signal functions
 from mpl_toolkits import mplot3d # Import toolkit for 3D plots
-from systemparameters import SystemParameters
+from audio_signals.systemparameters import SystemParameters
 from scipy.fft import fft, fftfreq
 from scipy.signal import find_peaks
 
